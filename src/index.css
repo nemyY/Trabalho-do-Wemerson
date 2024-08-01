@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+#overlay {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+  z-index: 40;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.header-container {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 16px;
+}
+
+.header-container span {
+  font-size: 32px;
+  text-align: center;
+}
+
+.open-btn {
+  font-size: 32px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  background-color: #d9d9d9;
+  overflow-x: hidden;
+  padding-top: 40px;
+  transition: 0.5s;
+}
+
+.side-bar-header {
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-bar-logo {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  padding: 8px;
+  background-color: #323232;
+  color: #fff;
+}
+
+.close-btn {
+  color: #000;
+  font-size: 32px;
+  text-decoration: none;
+  align-self: flex-end;
+  transition: all 0.2s;
+}
+
+.side-bar-link {
+  color: #000;
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.side-bar-links {
+  margin-top: 32px;
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.close-btn:hover,
+.side-bar-link:hover {
+  color: #ff407d;
+}
+
+.side-nav .closeBtn {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.hamburger-menu-btn {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+.main-container {
+  padding: 16px;
+}
+
+.box-grid {
+  margin-top: 32px;
+  width: 100%;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.box {
+  width: 100%;
+  border-radius: 16px;
+  min-height: 250px;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  align-items: center;
+
+  border: 1px solid #000;
+}
+
+.box span {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.highlighted-boxes {
+  display: flex;
+  gap: 16px;
+
+  margin: 16px 0;
+}
+
+.highlighted-boxes div {
+  min-height: 650px !important;
+}
+
+#profit-chart {
+  min-height: 500px;
+}
+
+@media (max-width: 425px) {
+  .highlighted-boxes {
+    flex-wrap: wrap;
+  }
+
+  .box-grid {
+    grid-template-columns: 1fr;
+  }
+}

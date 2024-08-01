@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./index.css" />
+    <title>HyperMegaCars</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <aside id="side-bar" class="side-nav">
+        <header class="side-bar-header">
+          <a href="javascript:void(0)" onclick="closeNav()" class="close-btn"
+            >&times;</a
+          >
+
+          <div class="side-bar-logo">LOGO</div>
+        </header>
+
+        <nav class="side-bar-links">
+          <a class="side-bar-link" href="#">Visão Geral</a>
+          <a class="side-bar-link" href="#">Pedidos</a>
+          <a class="side-bar-link" href="#">Clientes</a>
+          <a class="side-bar-link" href="#">Produtos</a>
+          <a class="side-bar-link" href="#">Cupons</a>
+        </nav>
+      </aside>
+
+      <header class="header-container">
+        <div class="logo-container">
+          <button class="open-btn" onclick="openNav()">&#9776;</button>
+        </div>
+
+        <span>LOGO</span>
+      </header>
+
+      <main class="main-container">
+        <h1>Boa tarde, usuário! :)</h1>
+
+        <div class="box-grid">
+          <div class="box total-costumers">
+            <span>Total de Clientes</span>
+          </div>
+          <div class="box total-orders">
+            <span>Total de Pedidos</span>
+          </div>
+          <div class="box products-created">
+            <span>Produtos Criados</span>
+          </div>
+          <div class="box coupons-created">
+            <span>Cupons Criados</span>
+          </div>
+        </div>
+
+        <div class="highlighted-boxes">
+          <div class="box">
+            <span>Produtos mais vendidos</span>
+          </div>
+
+          <div class="box">
+            <span>Estado com mais clientes</span>
+          </div>
+        </div>
+
+        <div id="profit-chart" class="box">
+          <span>Grafico de lucro</span>
+        </div>
+      </main>
+
+      <div id="overlay"></div>
+      <div id="hamburger-menu-container">.</div>
+    </div>
+  </body>
+</html>
